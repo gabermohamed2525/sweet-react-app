@@ -29,7 +29,7 @@ export default function App() {
   const totalCartCount = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
 
   return (
-    <Router>
+<Router basename="/sweet-react-app">
       <div className="min-h-screen flex flex-col justify-between bg-[#fdf2f8]">
         {/* بنمرر الـ totalCartCount للنافبار هنا */}
         <Navbar cartCount={totalCartCount} />
